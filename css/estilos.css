@@ -1,0 +1,28 @@
+body{
+    padding: 50px;
+}
+
+#contenedor-flexbox{
+    border: solid 1px #000000;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#contenedor-flexbox h2{
+    text-align: center;
+}
+
+#contenedor-flexbox .contenedor-padre{
+    display: flex;
+}
+
+#contenedor-flexbox .contenedor-padre .contenedor-hijo{
+    height: 200px;
+    width: 100px;
+    display: inline-block;
+    border: solid 1px #333999;
+    margin: 10px;
+}
+
+#estilos-flexbox{
+}

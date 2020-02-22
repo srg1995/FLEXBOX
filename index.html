@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FLEXBOX</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./js/funcionalidad.js"></script>
+</head>
+<body class="row">
+    <h2 class="col-12 text-center">CONTENEDOR FLEXBOX</h2>
+    <div id="contenedor-flexbox" class="col-6">
+        <div class="contenedor-padre">
+            <div class="contenedor-hijo">Flexbox 1</div>
+            <div class="contenedor-hijo">Flexbox 2</div>
+            <div class="contenedor-hijo">Flexbox 2</div>
+            <div class="contenedor-hijo">Flexbox 4</div>
+        </div>
+    </div>
+    <div id="estilos-flexbox" class="col-6">
+
+        <select name="display" id="display" class="form-control">
+            <option value="">flex</option>
+        </select>
+
+        <select name="direction" id="direction" class="form-control">
+            <option value="">Flex-direction</option>
+            <option value="row">row</option>
+            <option value="row-reverse">row-reverse</option>
+            <option value="column">column</option>
+            <option value="column-reverse">column-reverse</option>
+            <option value="initial">initial</option>
+            <option value="inherit">inherit</option>
+        </select>
+
+        <select name="wrap" id="wrap" class="form-control">
+            <option value="nowrap">nowrap</option>
+            <option value="wrap">wrap</option>
+            <option value="wrap-reverse">wrap-reverse</option>
+            <option value="initial">initial</option>
+            <option value="inherit">inherit</option>
+        </select>
+
+        <select name="justify" id="justify" class="form-control">
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="center">center</option>
+            <option value="space-between">space-between</option>
+            <option value="space-around">space-around</option>
+            <option value="initial">initial</option>
+            <option value="inherit">inherit</option>
+        </select>
+
+
+        <select name="align-item" id="align-item" class="form-control">
+            <option value="stretch">stretch</option>
+            <option value="center">center</option>
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="baseline">baseline</option>
+            <option value="initial">initial</option>
+            <option value="inherit">inherit</option>
+        </select>
+
+        <select name="align-content" id="align-content" class="form-control">
+            <option value="stretch">stretch</option>
+            <option value="center">center</option>
+            <option value="flex-start">flex-start</option>
+            <option value="flex-end">flex-end</option>
+            <option value="space-between">space-between</option>
+            <option value="space-around">space-around</option>
+            <option value="initial">initial</option>
+            <option value="inherit">inherit</option>
+        </select>
+
+    </div>
+    <div id="codigo-flexbox" class="col-12">fdsfsf</div>
+
+</body>
+</html>
