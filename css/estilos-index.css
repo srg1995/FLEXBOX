@@ -1,7 +1,31 @@
-body{
-    background: url('../img/267a89e3-7b76-4571-bddb-d45ee2a83558.jpg');
+.cabecera{
+    background: url('../img/portada.jpg');
     background-size:cover;
-    background-position-y: -100px;
+    background-position-y: -370px;
     background-repeat: no-repeat;
+    padding:120px 0;
+    display: flex;
+    align-items: center;
+}
 
+.titular-info{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    color: white;
+    position: relative;
+    left: 15%;
+    text-align: left;
+    padding: 15px;
+    max-width: 400px;
+}
+
+.habilidades{
+    display: flex;
+    justify-content: space-around;
+    height: 300px;
+}
+
+.ultimos-proyectos{
+    height: 300px;
+    background-color: red;
 }

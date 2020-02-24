@@ -1,0 +1,29 @@
+nav.row{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    color: #FFFFFF;
+    margin-right: 0;
+    margin-left: 0;
+}
+.opciones-menu{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+}
+
+.opciones-menu a{
+    color: white;
+    cursor: pointer;
+}
+.opciones-menu a:hover{
+    text-decoration: none;
+    color:grey;
+}
+
+.menu-info{
+    text-align: center;
+}

@@ -12,8 +12,9 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="./css/estilos-flex.css">
-    <script src="./js/funcionalidad-flex.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos-flex.css">
+    <script src="../js/funcionalidad-flex.js"></script>
 </head>
 <body class="row">
     <h2 class="col-12 text-center">CONTENEDOR FLEXBOX</h2>
@@ -31,7 +32,7 @@
             <div class="col-5">
                 <label for="flex-direction">flex-direction</label>
             </div>
-            <div class="col-7">
+            <div class="col-7 hijo">
                 <select name="flex-direction" id="direction" class="custom-select">
                     <option value="">--Flex-direction--</option>
                     <option value="row">row</option>
@@ -41,30 +42,42 @@
                     <option value="initial">initial</option>
                     <option value="inherit">inherit</option>
                 </select>
+                <div class="contenedor-tooltip-info">
+                    <i class="fas fa-question-circle"></i>
+                    <p class="texto-tooltip">
+                        Especifica cómo colocar los objetos flexibles en el contenedor flexible definiendo el eje principal y la dirección (normal o al revés).
+                    </p>
+                </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col-5">
-                <label for="justify-content">justify-content</label>
+                <label for="flex-wrap">flex-wrap</label>
             </div>
-            <div class="col-7">
-                <select name="justify-content" id="justify" class="custom-select">
-                    <option value="">--justify-content--</option>
-                    <option value="flex-start">flex-start</option>
-                    <option value="flex-end">flex-end</option>
-                    <option value="center">center</option>
-                    <option value="space-between">space-between</option>
-                    <option value="space-around">space-around</option>
+            <div class="col-7 hijo">
+                <select name="flex-wrap" id="wrap" class="custom-select">
+                    <option value="">--flex-wrap--</option>
+                    <option value="nowrap">nowrap</option>
+                    <option value="wrap">wrap</option>
+                    <option value="wrap-reverse">wrap-reverse</option>
                     <option value="initial">initial</option>
                     <option value="inherit">inherit</option>
                 </select>
+                <div class="contenedor-tooltip-info">
+                    <i class="fas fa-question-circle"></i>
+                    <p class="texto-tooltip">
+                        Especifica si los elementos "hijos" son obligados a permanecer en una misma línea o pueden fluir en varias líneas
+                    </p>
+                </div>
             </div>
         </div>
+
         <div class="row">
             <div class="col-5">
                 <label for="align-items">align-items</label>
             </div>
-            <div class="col-7">
+            <div class="col-7 hijo">
                 <select name="align-items" id="align-items" class="custom-select">
                     <option value="">--align-items--</option>
                     <option value="stretch">stretch</option>
@@ -75,13 +88,44 @@
                     <option value="initial">initial</option>
                     <option value="inherit">inherit</option>
                 </select>
+                <div class="contenedor-tooltip-info">
+                    <i class="fas fa-question-circle"></i>
+                    <p class="texto-tooltip">
+                        Controla la alineación de los elementos del Cross Axis, en Grid Layout controla la alineación de los elementos en el eje Block dentro de su área grid.
+                    </p>
+                </div>
             </div>
         </div>
+
+        <div class="row">
+            <div class="col-5">
+                <label for="justify-content">justify-content</label>
+            </div>
+            <div class="col-7 hijo">
+                <select name="justify-content" id="justify" class="custom-select">
+                    <option value="">--justify-content--</option>
+                    <option value="flex-start">flex-start</option>
+                    <option value="flex-end">flex-end</option>
+                    <option value="center">center</option>
+                    <option value="space-between">space-between</option>
+                    <option value="space-around">space-around</option>
+                    <option value="initial">initial</option>
+                    <option value="inherit">inherit</option>
+                </select>
+                <div class="contenedor-tooltip-info">
+                    <i class="fas fa-question-circle"></i>
+                    <p class="texto-tooltip">
+                        Define cómo el navegador distribuye el espacio entre y alrededor de los items flex, a lo largo del eje principal de su contenedor.
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <div class="row">
             <div class="col-5">
                 <label for="align-content">align-content</label>
             </div>
-            <div class="col-7">
+            <div class="col-7 hijo">
                 <select name="align-content" id="align-content" class="custom-select">
                     <option value="">--align-content--</option>
                     <option value="stretch">stretch</option>
@@ -93,30 +137,20 @@
                     <option value="initial">initial</option>
                     <option value="inherit">inherit</option>
                 </select>
+                <div class="contenedor-tooltip-info">
+                    <i class="fas fa-question-circle"></i>
+                    <p class="texto-tooltip">
+                        Ajusta las líneas dentro de un contenedor flex cuando hay espacio extra en el eje transversal.
+                    </p>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-5">
-                <label for="flex-wrap">flex-wrap</label>
-            </div>
-            <div class="col-7">
-                <select name="flex-wrap" id="wrap" class="custom-select">
-                    <option value="">--flex-wrap--</option>
-                    <option value="nowrap">nowrap</option>
-                    <option value="wrap">wrap</option>
-                    <option value="wrap-reverse">wrap-reverse</option>
-                    <option value="initial">initial</option>
-                    <option value="inherit">inherit</option>
-                </select>
-            </div>
-        </div>
-
 
         <div class="row">
             <div class="col-5">
                 <label for="hijo1">Posicion hijo 1</label>
             </div>
-            <div class="col-7 hijo1">
+            <div class="col-7 hijo1 hijo">
                 <select name="hijo1" id="hijo1" class="custom-select">
                     <option value="">--posicion--</option>
                     <option value="p1">posicion 1</option>
@@ -124,13 +158,19 @@
                     <option value="p3">posicion 3</option>
                     <option value="p4">posicion 4</option>
                 </select>
+                <div class="contenedor-tooltip-info">
+                    <i class="fas fa-question-circle"></i>
+                    <p class="texto-tooltip">
+                        fnjfhdksjfshf jkdhs fkjhdjksfh
+                    </p>
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col-5">
                 <label for="hijo1">Posicion hijo 2</label>
             </div>
-            <div class="col-7 hijo2">
+            <div class="col-7 hijo2 hijo">
                 <select name="hijo2" id="hijo2" class="custom-select">
                     <option value="">--posicion--</option>
                     <option value="p1">posicion 1</option>
@@ -138,13 +178,19 @@
                     <option value="p3">posicion 3</option>
                     <option value="p4">posicion 4</option>
                 </select>
+                <div class="contenedor-tooltip-info">
+                    <i class="fas fa-question-circle"></i>
+                    <p class="texto-tooltip">
+                        fnjfhdksjfshf jkdhs fkjhdjksfh
+                    </p>
+                </div>
             </div>
         </div>
         <div class="row">
             <div class="col-5">
                 <label for="hijo3">Posicion hijo 3</label>
             </div>
-            <div class="col-7 hijo3">
+            <div class="col-7 hijo3 hijo">
                 <select name="hijo3" id="hijo3" class="custom-select">
                     <option value="">--posicion--</option>
                     <option value="p1">posicion 1</option>
@@ -152,6 +198,32 @@
                     <option value="p3">posicion 3</option>
                     <option value="p4">posicion 4</option>
                 </select>
+                <div class="contenedor-tooltip-info">
+                    <i class="fas fa-question-circle"></i>
+                    <p class="texto-tooltip">
+                        fnjfhdksjfshf jkdhs fkjhdjksfh
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <label for="hijo4">Posicion hijo 4</label>
+            </div>
+            <div class="col-7 hijo4 hijo">
+                <select name="hijo4" id="hijo3" class="custom-select">
+                    <option value="">--posicion--</option>
+                    <option value="p1">posicion 1</option>
+                    <option value="p2">posicion 2</option>
+                    <option value="p3">posicion 3</option>
+                    <option value="p4">posicion 4</option>
+                </select>
+                <div class="contenedor-tooltip-info">
+                    <i class="fas fa-question-circle"></i>
+                    <p class="texto-tooltip">
+                        fnjfhdksjfshf jkdhs fkjhdjksfh
+                    </p>
+                </div>
             </div>
         </div>
 
@@ -190,6 +262,5 @@
             }
         </div>
     </div>
-
 </body>
 </html>
